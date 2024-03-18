@@ -36,6 +36,8 @@ builder.Services.AddScoped<IValidator<Book>, BookValidator>();
 builder.Services.AddScoped<IValidator<Author>, AuthorValidator>();
 builder.Services.AddScoped<IValidator<Janr>, JanrValidator>();
 builder.Services.AddTransient<IJanrService, JanrService>();
+builder.Services.AddTransient<IBookService, BookService>();
+builder.Services.AddTransient<IAuthorService, AuthorService>();
 
 
 
